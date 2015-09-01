@@ -12,7 +12,7 @@ app.config(function($routeProvider, $httpProvider){
   		templateUrl: 'js/teams/teamTmpl.html',
   		controller: 'teamCtrl',
   		resolve: {
-  			teamData: function() {
+  			teamData: function(teamService, $route) {
   				return teamService.getTeamData($route.current.params.team);
   			}
   		}
