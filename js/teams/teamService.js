@@ -11,7 +11,6 @@ app.service('teamService', function($http, $q){
 			gameObj.won = false;
 		}
 
-
 		return $http.post(url, gameObj);
 	}
 

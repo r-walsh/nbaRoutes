@@ -6,7 +6,12 @@ app.config(function($routeProvider, $httpProvider){
   $routeProvider
   	.when('/', {
   		templateUrl: 'js/home/homeTmpl.html',
-  		controller: 'homeCtrl'
+  		controller: 'homeCtrl',
+      resolve: {
+        allTeamData: function(homeService) {
+          return homeService.getAllTeamData();
+        }
+      }
   	})
   	.when('/teams/:team', {
   		templateUrl: 'js/teams/teamTmpl.html',

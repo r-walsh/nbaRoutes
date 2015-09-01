@@ -12,13 +12,13 @@ app.controller('teamCtrl', function($scope, $routeParams, teamService, teamData)
 
 	if ($routeParams.team === 'utahjazz') {
 		$scope.homeTeam = 'Utah Jazz';
-		$scope.homeLogo = 'http://tylermcginnis.github.io/nbaRoutes/images/jazz-logo.png';
+		$scope.homeLogo = 'images/jazz-logo.png';
 	} else if ($routeParams.team === 'losangeleslakers') {
 		$scope.homeTeam = 'Los Angeles Lakers';
-		$scope.homeLogo = 'http://tylermcginnis.github.io/nbaRoutes/images/lakers-logo.png';
+		$scope.homeLogo = 'images/lakers-logo.png';
 	} else if ($routeParams.team === 'miamiheat') {
 		$scope.homeTeam = 'Miami Heat';
-		$scope.homeLogo = 'http://tylermcginnis.github.io/nbaRoutes/images/heat-logo.png';
+		$scope.homeLogo = 'images/heat-logo.png';
 	}
 
 	$scope.submitGame = function() {

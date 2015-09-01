@@ -4,6 +4,16 @@ html, body {
   width: 100%;
   height: 100%;
   font-family: 'Lato', sans-serif;
+  font-weight: lighter;
+}
+.home-inner-container {
+  width: 28%;
+  display: inline-block;
+  position: relative;
+}
+.team-wrapper {
+  position: absolute;
+  top: 0;
 }
 
 .main-container {
@@ -44,6 +54,11 @@ html, body {
 
 .record h1 {
   text-align: center;
+}
+
+.record {
+  text-align: center;
+  line-height: 15px;
 }
 
 .even {
